@@ -13,7 +13,7 @@ final submittedShiftProvider = FutureProvider<List<SubmittedShift>>((ref) async 
   final body = jsonDecode(response.body) as Map<String, dynamic>;
   final weeks = (body['data']?['data'] as List<dynamic>?) ?? [];
 
-  return weeks.expand<SubmittedShift>((week) {
+  return weeks.expand<SubmittedShift>((week ) {
     final weekTitle = week['week'] ?? 'Unknown Week';
     final weekId = week['week_id'] ?? '';
     final shifts = week['shifts'] as List<dynamic>? ?? [];
