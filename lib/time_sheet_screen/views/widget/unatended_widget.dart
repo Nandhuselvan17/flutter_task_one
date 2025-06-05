@@ -15,7 +15,6 @@ class UnatendedWidget extends StatelessWidget {
     return  Container(
       height: 237,
       width: MediaQuery.of(context).size.width * 0.9,
-
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),

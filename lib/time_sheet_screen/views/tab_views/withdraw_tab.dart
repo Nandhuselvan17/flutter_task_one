@@ -1,6 +1,6 @@
 import 'package:apk_test_one/time_sheet_screen/model/withdraw_model.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart'; // Required for debugPrint
+import 'package:flutter/material.dart';
 import '../widget/withdraw_card_widget.dart';
 
 class WithdrawTab extends StatelessWidget {
@@ -17,7 +17,6 @@ class WithdrawTab extends StatelessWidget {
 
           shifts.length,
               (index) {
-            // Print shift details to console
             debugPrint('widtraw index val$index: ${shifts[index].client}');
 
             return Padding(

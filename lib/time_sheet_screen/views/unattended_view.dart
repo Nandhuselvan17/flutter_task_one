@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../model/unattended_model.dart';
-
 import '../provider/unattended_provider.dart';
 
 class UnattendedView extends ConsumerWidget {
@@ -21,7 +20,7 @@ class UnattendedView extends ConsumerWidget {
         // Group by week
         final grouped = <String, List<UnattendedShift>>{};
         for (var shift in shifts) {
-          grouped.putIfAbsent(shift.date, () => []).add(shift); // You can format `shift.date` to week if needed
+          grouped.putIfAbsent(shift.date, () => []).add(shift);
         }
 
         return RefreshIndicator(

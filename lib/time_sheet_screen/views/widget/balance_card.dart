@@ -12,7 +12,7 @@ class BalanceCard extends StatelessWidget {
     final basicPay = balance.data?.basicPayAmount ?? 0;
     final holidayPay = balance.data?.holidayPayAmount ?? 0;
 
-    // Format as currency string (you can customize this)
+
     String formatCurrency(int amount) {
       return '€${(amount / 100).toStringAsFixed(2)}';  // Assuming amounts are in cents
     }

@@ -1,18 +1,11 @@
 
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../../res/constants/text_constants.dart';
-
 import 'package:dotted_line/dotted_line.dart';
-
 import '../../model/submit_model.dart';
 
 
-
- 
 class SubmitedCardWidget extends StatelessWidget {
   const SubmitedCardWidget({
     super.key,

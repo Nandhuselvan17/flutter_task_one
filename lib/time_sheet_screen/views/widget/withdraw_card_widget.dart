@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../../res/constants/text_constants.dart';
-
 import '../../model/withdraw_model.dart';
 
 

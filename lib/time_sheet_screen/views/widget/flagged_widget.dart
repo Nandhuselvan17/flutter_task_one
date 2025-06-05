@@ -48,14 +48,14 @@ class FlaggedWidget extends StatelessWidget {
 
           // rate and button row
           Padding(
-            padding: const EdgeInsets.only(left: 20.0, top: 5),
+            padding: const EdgeInsets.only(left: 10.0, top: 5),
             child: Row(
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "€${shift.hourlyRate.toStringAsFixed(2)}/hr",
+                      "€${shift.totalPayRate.toStringAsFixed(2)}/hr",
                       style: const TextStyle(
                           fontSize: 20, fontWeight: FontWeight.w600),
                     ),
@@ -71,7 +71,7 @@ class FlaggedWidget extends StatelessWidget {
                         Icon(Icons.circle,
                             color: Colors.grey.withOpacity(0.5), size: 6),
                         Text(
-                          " €${shift.totalPayRate.toStringAsFixed(2)}",
+                          " €${shift.hourlyRate.toStringAsFixed(2)}",
                           style: const TextStyle(
                               fontSize: 13,
                               fontWeight: FontWeight.w500,

@@ -5,7 +5,9 @@ import 'dart:convert';
 
 
 final withdrawProvider = FutureProvider<WithdrawModel>((ref) async {
+
   final url = Uri.parse("https://run.mocky.io/v3/28807b48-23ae-4be8-929f-ab2b10f6f217");
+
   final response = await http.get(url);
 
   if (response.statusCode != 200) {

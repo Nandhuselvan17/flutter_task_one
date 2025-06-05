@@ -16,14 +16,11 @@ class FlaggedView extends ConsumerWidget {
     Future<void> _refresh() async {
       ref.invalidate(flaggedProvider); // Force re-fetch
     }
-
-
     return asyncFlaggedData.when(
       loading: () => const Center(child: CupertinoActivityIndicator()),
       error: (err, stack) => Center(child: Text('Error: $err')),
       data: (flaggedModel) {
         final flaggedWeeks = flaggedModel.data.data;
-
         return RefreshIndicator(
           onRefresh: _refresh,
           child: ListView.builder(

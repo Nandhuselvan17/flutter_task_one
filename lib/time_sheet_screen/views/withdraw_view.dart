@@ -46,7 +46,6 @@ class WithdrawView extends ConsumerWidget {
                       style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
-                  // Wrap WithdrawTab with try-catch for debugging
                   Builder(
                     builder: (_) {
                       try {
